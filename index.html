@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shravani Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="desktop-box">
+
+
+<header>
+<nav>
+
+<h2 class="logo">Shravani</h2>
+
+<ul>
+
+<li onclick="showSection('home')">Home</li>
+<li onclick="showSection('about')">About</li>
+<li onclick="showSection('skills')">Skills</li>
+<li onclick="showSection('projects')">Projects</li>
+<li onclick="showSection('education')">Education</li>
+<li onclick="showSection('contact')">Contact</li>
+
+</ul>
+
+<button class="contact-btn" onclick="showSection('contact')">
+Contact Me
+</button>
+
+</nav>
+</header>
+
+<section id="home" class="section-box" style="display:block;">
+
+<div class="home">
+
+<div class="left">
+
+<h3>Hi</h3>
+
+<h1>
+I'm <span>Shravani</span><br>
+Web Developer
+</h1>
+
+<p>
+I create modern and responsive websites using HTML, CSS and JavaScript.
+</p>
+
+<button class="btn-orange" onclick="showSection('projects')">
+View Projects
+</button>
+
+<button class="btn-orange" onclick="downloadResume()">
+Download Resume
+</button>
+
+</div>
+
+
+<div class="right">
+
+<img src="image.jpeg" class="profile-photo">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about" class="section-box" style="display:none;">
+
+<div class="about-container">
+
+<div>
+
+<h2>About Me</h2>
+
+<p>Hello! My name is Shravani.</p>
+
+<p>I love creating modern and responsive websites using HTML, CSS, and JavaScript.</p>
+
+<p>I like learning new technologies and improving my skills.</p>
+
+<p><b>Location:</b> Pune, India</p>
+<p><b>Role:</b> Frontend Developer</p>
+
+<button class="btn-orange" onclick="downloadResume()">
+Download Resume
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="skills" class="section-box" style="display:none;">
+
+<h2>Skills</h2>
+
+<div class="skill-box">HTML</div>
+<div class="skill-box">CSS</div>
+<div class="skill-box">JavaScript</div>
+
+</section>
+
+
+
+<section id="projects" class="section-box" style="display:none;">
+
+<h2>Projects</h2>
+
+<p>
+Stopwatch Web App  
+<br>
+<a href="https://github.com/shravaniwasvand/PRODIGY_WD_02.git" target="_blank">
+View on GitHub
+</a>
+</p>
+
+<p>
+Weather application
+<br>
+<a href="https://github.com/shravaniwasvand/PRODIGY_WD_05.git" target="_blank">
+View on GitHub
+</a>
+</p>
+
+<p>
+Tic-Tac-Toe web app  
+<br>
+<a href="https://github.com/shravaniwasvand/PRODIGY_WD_03.git" target="_blank">
+View on GitHub
+</a>
+</p>
+
+<p>
+Resonsive landingpage  
+<br>
+<a href="https://github.com/shravaniwasvand/PRODIGY_WD_01.git" target="_blank">
+View on GitHub
+</a>
+</p>
+
+</section>
+
+
+
+<section id="education" class="section-box" style="display:none;">
+
+<h2>Education</h2>
+
+<p>Bachelor of Engineering (Information Technology)</p>
+<p>2023 – 2027</p>
+
+</section>
+
+
+
+<section id="contact" class="section-box" style="display:none;">
+
+<h2>Contact Me</h2>
+
+<form onsubmit="sendMessage(event)" class="contact-form">
+
+<input type="text" placeholder="Enter your name" required>
+
+<input type="email" placeholder="Enter your email" required>
+
+<textarea placeholder="Enter your message" required></textarea>
+
+<button type="submit" class="btn-orange">
+Send Message
+</button>
+
+</form>
+
+</section>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
